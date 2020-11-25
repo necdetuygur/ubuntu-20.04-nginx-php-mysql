@@ -72,7 +72,7 @@ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 
 sudo ln /usr/local/bin/composer /usr/bin/composer
 
-### Nginx Konfigürasyonu (site1 konfigürasyon dosya içeriği, belgenin en sonundadır)
+### Nginx Konfigürasyonu
 
 rm /etc/nginx/sites-enabled/default
 
