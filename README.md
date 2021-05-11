@@ -38,6 +38,8 @@ sudo service apache2 stop
 
 sudo apt remove apache2
 
+sudo apt autoremove -y
+
 ### MySQL Servisinin Kurulumu
 
 sudo mysql\_secure\_installation
