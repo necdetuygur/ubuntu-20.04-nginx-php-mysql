@@ -16,15 +16,15 @@ sudo apt update
 
 ### Varsa MySQL Sunucusu İle İlgili Tüm Verilerin Kaldırılması
 
-sudo apt remove --purge mysql\*
+sudo apt remove --purge mysql\* -y
 
-sudo apt purge mysql\*
+sudo apt purge mysql\* -y
 
 sudo apt autoremove -y
 
-sudo apt autoclean
+sudo apt autoclean -y
 
-sudo apt remove dbconfig-mysql
+sudo apt remove dbconfig-mysql -y
 
 sudo apt dist-upgrade -y
 
