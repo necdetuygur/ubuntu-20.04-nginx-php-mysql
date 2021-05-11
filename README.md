@@ -26,7 +26,7 @@ sudo apt autoclean
 
 sudo apt remove dbconfig-mysql
 
-sudo apt dist-upgrade
+sudo apt dist-upgrade -y
 
 ### Tüm Servislerin Kurulması (PHP, MySQL, Nginx) (Tek satır yapıldı)
 
