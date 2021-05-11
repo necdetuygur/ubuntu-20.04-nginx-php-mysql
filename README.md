@@ -20,7 +20,7 @@ sudo apt remove --purge mysql\*
 
 sudo apt purge mysql\*
 
-sudo apt autoremove
+sudo apt autoremove -y
 
 sudo apt autoclean
 
