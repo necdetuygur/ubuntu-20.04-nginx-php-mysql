@@ -1,4 +1,5 @@
 ```
+sudo rm -rf mysql*
 sudo apt remove --purge mysql* -y
 sudo apt purge mysql* -y
 sudo apt autoremove -y
