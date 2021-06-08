@@ -16,6 +16,8 @@ sudo apt update
 
 ### Varsa MySQL Sunucusu İle İlgili Tüm Verilerin Kaldırılması
 
+sudo rm -rf mysql*
+
 sudo apt remove --purge mysql\* -y
 
 sudo apt purge mysql\* -y
