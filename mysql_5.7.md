@@ -9,13 +9,9 @@ sudo apt dist-upgrade -y
 sudo apt update
 sudo apt install wget -y
 wget https://dev.mysql.com/get/mysql-apt-config_0.8.12-1_all.deb
-mkdir /vagrant
-cd /vagrant
 sudo dpkg -i mysql-apt-config_0.8.12-1_all.deb
-bionic
-5.7
-
-cd
+-- bionic
+-- 5.7
 
 sudo vi /etc/multipath.conf
 defaults {
