@@ -101,3 +101,7 @@ rm -rf /var/www/site1
 cd /var/www/
 
 git clone git.com/site1 site1
+
+### PhpMyAdmin
+
+sudo apt install -y phpmyadmin
