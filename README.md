@@ -36,7 +36,7 @@ sudo apt install -y mysql-server nginx php php-cli php-fpm php-json php-common p
 
 sudo service apache2 stop
 
-sudo apt remove apache2
+sudo apt remove apache2 -y
 
 sudo apt autoremove -y
 
