@@ -32,7 +32,7 @@ sudo apt dist-upgrade -y
 
 ### Tüm Servislerin Kurulması (PHP, MySQL, Nginx) (Tek satır yapıldı)
 
-sudo apt install -y mysql-server nginx php php-cli php-fpm php-json php-common php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmath
+sudo apt install -y nginx php php-cli php-fpm php-json php-common php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmath
 
 ### Servislerle Birlikte Gelen Apache Servisinin Kaldırılması
 
