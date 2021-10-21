@@ -1,4 +1,4 @@
-```
+```sh
 sudo rm -rf mysql*
 sudo apt remove --purge mysql* -y
 sudo apt purge mysql* -y
@@ -31,4 +31,11 @@ CREATE USER 'admin'@'%' IDENTIFIED BY 'Şifre';
 GRANT ALL PRIVILEGES ON * . * TO 'admin'@'%';
 FLUSH PRIVILEGES;
 quit;
+
+
+
+
+# Gerekli değil, yapılmasada olur
+sudo mysql_secure_installation
+- disallow root login remotely sorusuna no cevabı verilecek
 ```

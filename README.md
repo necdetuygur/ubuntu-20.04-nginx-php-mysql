@@ -14,16 +14,7 @@ sudo su
 ```sh
 sudo apt update
 ```
-### Varsa MySQL Sunucusu İle İlgili Tüm Verilerin Kaldırılması
-```sh
-sudo rm -rf mysql*
-sudo apt remove --purge mysql* -y
-sudo apt purge mysql* -y
-sudo apt autoremove -y
-sudo apt autoclean -y
-sudo apt remove dbconfig-mysql -y
-# sudo apt dist-upgrade -y
-```
+### [MySQL Kurulumu](./mysql_5.7.md)
 ### Tüm Servislerin Kurulması (PHP, MySQL, Nginx) (Tek satır yapıldı)
 ```sh
 sudo apt install -y nginx php php-cli php-fpm php-json php-common php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmath
@@ -33,19 +24,6 @@ sudo apt install -y nginx php php-cli php-fpm php-json php-common php-mysql php-
 sudo service apache2 stop
 sudo apt remove apache2 -y
 sudo apt autoremove -y
-```
-### MySQL Servisinin Kurulumu
-```sh
-sudo mysql_secure_installation
-- disallow root login remotely sorusuna no cevabı verilecek
-```
-### MySQL Kullanıcı Tanımlanması
-```sh
-sudo mysql
-CREATE USER 'admin'@'%' IDENTIFIED BY 'Şifre';
-GRANT ALL PRIVILEGES ON * . * TO 'admin'@'%';
-FLUSH PRIVILEGES;
-quit;
 ```
 ### PHP Servisinin Başlatılması &amp; Kontrolü
 ```sh
