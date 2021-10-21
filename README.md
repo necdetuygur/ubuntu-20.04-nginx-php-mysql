@@ -17,7 +17,7 @@ sudo apt update
 ### [MySQL Kurulumu](./mysql_5.7.md)
 ### Tüm Servislerin Kurulması (PHP, MySQL, Nginx) (Tek satır yapıldı)
 ```sh
-sudo apt install -y nginx php php-cli php-fpm php-json php-common php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmath
+sudo apt install -y nginx php php-cli php-fpm php-json php-common php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmath --fix-missing
 ```
 ### Servislerle Birlikte Gelen Apache Servisinin Kaldırılması
 ```sh
@@ -61,5 +61,5 @@ git clone git.com/site1 site1
 ```
 ### PhpMyAdmin
 ```sh
-sudo apt install -y phpmyadmin
+sudo apt install -y phpmyadmin --fix-missing
 ```

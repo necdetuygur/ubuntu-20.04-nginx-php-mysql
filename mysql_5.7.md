@@ -8,7 +8,7 @@ sudo apt remove dbconfig-mysql -y
 # sudo apt dist-upgrade -y
 
 sudo apt update
-sudo apt install wget -y
+sudo apt install wget -y --fix-missing
 wget https://dev.mysql.com/get/mysql-apt-config_0.8.12-1_all.deb
 sudo dpkg -i mysql-apt-config_0.8.12-1_all.deb
 -- bionic
@@ -24,7 +24,7 @@ blacklist {
 
 sudo apt-get update
 sudo apt-cache policy mysql-server
-sudo apt install -f -y mysql-client=5.7* mysql-community-server=5.7* mysql-server=5.7*
+sudo apt install -f -y mysql-client=5.7* mysql-community-server=5.7* mysql-server=5.7* --fix-missing
 
 sudo mysql -u root -p
 CREATE USER 'admin'@'%' IDENTIFIED BY 'Şifre';
