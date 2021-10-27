@@ -1,0 +1,1 @@
+sudo apt update && sudo apt install -y nginx php php-cli php-fpm php-json php-common php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmath --fix-missing && sudo service apache2 stop && sudo apt remove apache2 -y && sudo apt autoremove -y && sudo systemctl restart php7.4-fpm.service && sudo systemctl status php7.4-fpm.service
