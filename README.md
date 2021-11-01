@@ -63,4 +63,5 @@ git clone git.com/site1 site1
 ### PhpMyAdmin
 ```sh
 sudo apt install -y phpmyadmin --fix-missing
+sudo ln -s /usr/share/phpmyadmin ./phpmyadmin
 ```
