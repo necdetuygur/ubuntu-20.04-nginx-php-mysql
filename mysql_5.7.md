@@ -5,7 +5,8 @@ sudo apt purge mysql* -y
 sudo apt autoremove -y
 sudo apt autoclean -y
 sudo apt remove dbconfig-mysql -y
-# sudo apt dist-upgrade -y
+
+sudo apt dist-upgrade -y # Gerekli
 
 sudo apt update
 sudo apt install wget -y --fix-missing
