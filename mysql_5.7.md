@@ -14,13 +14,14 @@ sudo dpkg -i mysql-apt-config_0.8.12-1_all.deb
 # bionic
 # 5.7
 
-sudo vi /etc/multipath.conf
-defaults {
-    user_friendly_names yes
-}
-blacklist {
-    devnode "^(ram|raw|loop|fd|md|dm-|sr|scd|st|sda)[0-9]*"
-}
+# sudo vi /etc/multipath.conf
+# defaults {
+#     user_friendly_names yes
+# }
+# blacklist {
+#     devnode "^(ram|raw|loop|fd|md|dm-|sr|scd|st|sda)[0-9]*"
+# }
+echo $'defaults {\n\tuser_friendly_names yes\n}\nblacklist {\n\tdevnode "^(ram|raw|loop|fd|md|dm-|sr|scd|st|sda)[0-9]*"\n}' > /etc/multipath.conf
 
 sudo apt-get update
 sudo apt-cache policy mysql-server
