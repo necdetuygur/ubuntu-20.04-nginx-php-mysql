@@ -15,15 +15,11 @@ sudo su
 sudo apt update
 ```
 ### [MySQL Kurulumu](./mysql_5.7.md)
+### [PHP Kurulumu](./php.md)
 ### Tüm Servislerin Kurulması (PHP, MySQL, Nginx) (Tek satır yapıldı)
 ```sh
 sudo apt install -y nginx php php-cli php-fpm php-json php-common php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmath --fix-missing
 ```
-
-```sh
-sudo apt-get install libpcre2-8-0
-```
-
 ### Servislerle Birlikte Gelen Apache Servisinin Kaldırılması
 ```sh
 sudo service apache2 stop
