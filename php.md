@@ -9,7 +9,7 @@ apt update
 
 apt install -y nginx php php-cli php-fpm php-json php-common php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmath --fix-missing
 
-apt install libpcre2-8-0
+apt install libpcre2-8-0 -y
 
 apt install php8.0-intl -y
 apt install php8.0-xmlrpc -y
