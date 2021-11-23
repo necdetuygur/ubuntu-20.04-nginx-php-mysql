@@ -5,6 +5,7 @@ apt autoremove -y
 
 apt install software-properties-common -y
 add-apt-repository ppa:ondrej/php -y
+apt update
 
 apt install libpcre2-8-0
 
