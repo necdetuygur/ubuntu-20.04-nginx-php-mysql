@@ -1,3 +1,4 @@
+```sh
 sudo apt-get update
 sudo apt -y install software-properties-common
 sudo add-apt-repository ppa:ondrej/php
@@ -9,3 +10,4 @@ service apache2 stop
 apt remove apache2 -y
 apt autoremove -y
 sudo apt-get install nginx php7.4-fpm
+```
