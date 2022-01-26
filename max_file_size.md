@@ -11,5 +11,7 @@ post_max_size = 64M
 ```
 
 ## Konsolda
+```
 service nginx restart
 systemctl restart php7.4-fpm.service
+```
