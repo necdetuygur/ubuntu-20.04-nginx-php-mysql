@@ -11,6 +11,7 @@ sudo apt dist-upgrade -y # Gerekli
 sudo apt update
 sudo apt install wget -y --fix-missing
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 6494C6D6997C215E
+curl -s http://repo.mysql.com/RPM-GPG-KEY-mysql-2022 | apt-key add -
 wget http://repo.mysql.com/mysql-apt-config_0.8.10-1_all.deb
 sudo dpkg -i mysql-apt-config_0.8.10-1_all.deb
 # bionic
